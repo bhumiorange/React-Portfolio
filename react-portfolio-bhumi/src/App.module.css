@@ -1,0 +1,211 @@
+:root {
+  --primary-color: #f8d7d1;
+  --secondary-color: #ffece7;
+  --accent-color: #f28b82;
+  --text-color: #333;
+  --light-grey: #fafafa;
+  --dark-text: #2e2e2e;
+}
+
+body {
+  background-color: var(--secondary-color);
+  font-family: 'Arial', sans-serif;
+  color: var(--text-color);
+}
+
+/* Container for the grid layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 10px;
+}
+
+/* Header styling */
+.header {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name {
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--dark-text);
+}
+
+.nav a {
+  margin-left: 20px;
+  color: var(--dark-text);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.nav a:hover {
+  color: var(--accent-color);
+}
+
+/* Main content grid layout */
+.mainGrid {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  gap: 20px;
+}
+
+/* Bio box styling */
+.bioBox {
+  grid-column: 1 / 7;
+  background-color: var(--light-grey);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.bioBox h2 {
+  color: var(--accent-color);
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+.bioBox p {
+  font-size: 20px;
+  color: var(--dark-text);
+}
+
+/* Image styling */
+.imageBox {
+  grid-column: 7 / 10;
+  display: flex;
+  justify-content: center;
+}
+
+.profileImage {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contactBox {
+  grid-column: 1 / 7;
+  background-color: var(--accent-color);
+  padding: 20px;
+  border-radius: 15px;
+  color: white;
+  font-size: 1.5rem;
+}
+
+
+.sideProjectsBox {
+  grid-column: 7 / 10;
+  background-color: var(--light-grey);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.sideProjectsBox h2 {
+  color: var(--accent-color);
+  margin-bottom: 10px;
+  font-weight:bolder;
+}
+
+.sideProjectsBox h4 {
+  color: var(--dark-text);
+  margin-bottom: 10px;
+  font-weight:lighter;
+}
+
+.sideProjectsBox h4 a {
+  text-decoration: none;
+  color: var(--dark-text);
+}
+
+.sideProjectsBox h4 a:hover{
+  color: var(--accent-color);
+}
+
+.SocietiesAndVolunteer{
+  padding: 20px;
+  border-radius: 15px ;
+  grid-column: 10 / -1;
+  grid-row: 1 / 3;
+  height: 100%;
+  font-size:x-large;
+  background-color: var(--accent-color);
+}
+
+.SocietiesAndVolunteer h2, .volunteer h2{
+  text-align: center;
+}
+
+.SocietiesAndVolunteer ul{
+  padding-left: 50px;
+  padding-right: 44px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.volunteer {
+  text-align: center; 
+  padding: 30px;
+  font-size: 20px;
+}
+
+.volunteer a{
+  text-decoration: none;
+  color: var(--dark-text);
+}
+
+.volunteer a:hover{
+  color: var(--primary-color);
+}
+
+.socialMediaBox {
+  grid-column: 1 / 7;
+  background-color: var(--light-grey);
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.socialMediaBox a {
+  color: var(--dark-text);
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.socialMediaBox a:hover {
+  color: var(--accent-color);
+}
+.skillsAndTech{
+  background-color: var(--primary-color);
+  grid-column: 1 / -1;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 15px;
+}
+
+a {
+  transition: color 0.3s ease;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  line-height: 1.6;
+}
